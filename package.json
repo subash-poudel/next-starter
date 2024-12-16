@@ -10,8 +10,7 @@
     "lint:fix": "next lint --fix",
     "prepare": "husky",
     "pretty": "prettier --write .",
-    "pre-commit": "lint-staged",
-    "test": ""
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "next": "15.1.0",
@@ -36,8 +35,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "next lint --fix",
-      "prettier --write"
+      "prettier --write",
+      "eslint"
     ],
     "*.{css,scss,md,json}": [
       "prettier --write"
