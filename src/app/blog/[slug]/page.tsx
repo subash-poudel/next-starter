@@ -1,3 +1,4 @@
+var a = "test";
 export default function Page() {
-  return <h1>Hello, Blog with specific Post Page!</h1>;
+      return <h1>Hello, Blog with specific Post Page!</h1>;
 }
